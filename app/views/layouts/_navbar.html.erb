@@ -1,0 +1,20 @@
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="/">DCI-IN-RUBY: Auctions</a>
+      <div class="nav-collapse">
+        <ul class="nav">
+          <li><%= link_to "Auctions", auctions_path %></li>
+          <li><%= link_to "Sell", new_auction_path %></li>
+        </ul>
+      </div>
+      <ul class="nav" style="float:right;">
+        <% if user_signed_in? %>
+          <li><%= link_to "Sign out #{current_user.name}" , destroy_user_session_path, :method => :delete %></li>
+        <% else %>
+          <li><%= link_to 'Sign in', new_user_session_path %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>
