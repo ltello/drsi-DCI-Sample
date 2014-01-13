@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Dcisample::Application.load_tasks
+DrsiDcisample::Application.load_tasks

@@ -1,5 +1,5 @@
 require 'sidekiq/web'
-Dcisample::Application.routes.draw do
+DrsiDcisample::Application.routes.draw do
 
   devise_for :users
 
